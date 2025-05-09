@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Bio</title>
+    <style>
+        /* Reset some basic styles */
+        body, h1, h2, p, form {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        /* Header style with gradient and black border */
+        header {
+            text-align: center;
+            background: linear-gradient(to right, #f5945c 0%, #e95dae 100%); /* Added gradient to header */
+            color: white;
+            padding: 20px 0;
+            border: 3px solid black; /* Black border with medium thickness */
+            border-radius: 8px; /* Optional: adds rounded corners */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 10px;
+            border-radius: 4px; /* Optional: adds rounded corners to the text */
+        }
+
+        /* Section style */
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;  /* Added margin to create space between header and paragraph */
+            padding: 20px;
+            background: linear-gradient(to right, #6dbfb8 0%, #feff48 100%); /* Initial linear gradient */
+            
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        /* Form style */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Submit button style with black border */
+        button {
+            padding: 10px;
+            border: 3px solid black; /* Black border with medium thickness for the button */
+            background: linear-gradient(to right, #f5945c 0%, #f55c80 100%);
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Bio Page</h1>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aishwarya, a passionate learner and aspiring software engineer. I love exploring new technologies and building innovative solutions. I have a background in Computer Science and Engineering and currently, I am learning full stack development at Masai School.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>In my free time, I enjoy reading books, playing badminton, and exploring different cultures through travel. I also have a keen interest in astrology, palmistry, and personal development.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>If you'd like to get in touch, feel free to fill out the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
