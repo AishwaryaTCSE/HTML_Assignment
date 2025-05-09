@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e7b62e;
+        }
+
+        /* Typing animation without blinking cursor */
+        .typing-text {
+            font-size: 32px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 4s steps(20, end) forwards;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 18ch; } /* "Tourism website" has 17 characters including space */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="typing-text">Tourism website</h1>
+
+    <div class="gallery">
+        <section>
+            <img src="https://i.ytimg.com/vi/cT6EGvPuZMM/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCJ231mnh7Fn2NpxgxPdFQHe9t5qQ" alt="Andhra Pradesh">
+            <a href="https://tourism.ap.gov.in/home" target="_blank">Andhra Pradesh</a>
+        </section>
+
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRuJtWVIbHHxL1E4CX4m1wZ5i2515xRxiUXg&s" alt="Karnataka">
+            <a href="https://karnatakatourism.org/" target="_blank">Karnataka</a>
+        </section>
+
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzW3VyjVB37EFwkfNq5wGCmTbP5dcY1G7jQ&s" alt="Maharashtra">
+            <a href="https://maharashtratourism.gov.in/" target="_blank">Maharashtra</a>
+        </section>
+    </div>
+
+</body>
+</html>
