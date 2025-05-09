@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Debug Page</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* spacing between image and form */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Page</h1>
+    <p>This is a paragraph that introduces the page.</p>
+
+    <div class="container">
+        <img src="data:image/png;base64,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" alt="Sample Image" width="200">
+
+        <!-- Login Form -->
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
